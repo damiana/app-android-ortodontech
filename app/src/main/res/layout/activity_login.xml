@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+
+    <ImageView
+        android:id="@+id/img_login"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_login" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edTxtLogin"
+        android:layout_alignLeft="@+id/edTxtLogin"
+        android:textColor="#000000"
+        android:text="@string/login" />
+
+    <EditText
+        android:id="@+id/edTxtLogin"
+        android:layout_width="247dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="154dp"
+        android:drawableLeft="@drawable/ic_login_user"
+        android:ems="60"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/txtSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/txtLogin"
+        android:layout_marginBottom="114dp"
+        android:textColor="#000000"
+        android:text="@string/senha" />
+
+    <EditText
+        android:id="@+id/edTxtSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/txtLogin"
+        android:layout_marginBottom="59dp"
+        android:drawableLeft="@drawable/ic_senha"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTxtSenha"
+        android:layout_marginTop="-59dp"
+        android:layout_toRightOf="@+id/txtLogin"
+        android:background="#4682B4"
+        android:textColor="#FFFFFF"
+        android:text="@string/btnLogin"/>
+
+
+</RelativeLayout>

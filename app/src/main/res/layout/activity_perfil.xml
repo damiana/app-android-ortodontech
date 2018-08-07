@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_bck_perfil" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="12dp"
+        android:text="@string/nome" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtNome"
+        android:layout_below="@+id/txtNome"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:text="nome" />
+
+    <TextView
+        android:id="@+id/txtDataNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtNome"
+        android:layout_marginTop="167dp"
+        android:text="@string/dataNascimento" />
+
+    <EditText
+        android:id="@+id/editDataNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtNome"
+        android:layout_below="@+id/txtDataNascimento"
+        android:ems="15"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtNome"
+        android:layout_centerVertical="true"
+        android:text="@string/loginEmail" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtNome"
+        android:layout_below="@+id/txtEmail"
+        android:ems="15"
+        android:inputType="textEmailAddress"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/txtSenhaPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtNome"
+        android:layout_marginBottom="157dp"
+        android:text="@string/senha" />
+
+    <EditText
+        android:id="@+id/editSenhaPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtNome"
+        android:layout_below="@+id/txtSenhaPerfil"
+        android:layout_marginTop="-157dp"
+        android:ems="15"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnEditarPerfil"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="#4682B4"
+        android:drawableLeft="@drawable/ic_perfil"
+        android:text="@string/btnEditarPerfil"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

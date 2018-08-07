@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Projeto de pesquisa</string>
+    <string name="conteudo">Contéudo</string>
+    <string name="quiz">Quiz</string>
+    <string name="perfil">Editar Perfil</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="btnLogin">Logar</string>
+    <string name="nome">Nome Completo</string>
+    <string name="dataNascimento">Data de Nascimento</string>
+    <string name="loginEmail">E-mail</string>
+    <string name="nickname">Nickname</string>
+    <string name="btnEditarPerfil">Salvar Perfil </string>
+</resources>
