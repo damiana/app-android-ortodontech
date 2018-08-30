@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1015594116224",
+    "firebase_url": "https://ortodontech.firebaseio.com",
+    "project_id": "ortodontech",
+    "storage_bucket": "ortodontech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015594116224:android:40766970d13bbad8",
+        "android_client_info": {
+          "package_name": "br.ortodontech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015594116224-5t39h1cbf2etsip85jneichaqorhq18a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHcTQ89UazzGZno_HZ7jOAU_2R0E15O4w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
