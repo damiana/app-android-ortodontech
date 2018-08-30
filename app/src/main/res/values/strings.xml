@@ -11,4 +11,6 @@
     <string name="loginEmail">E-mail</string>
     <string name="nickname">Nickname</string>
     <string name="btnEditarPerfil">Salvar Perfil </string>
+
+    <string name="quizFrase">Aqui devera ter o QUIZ com perguntas e respostas </string>
 </resources>

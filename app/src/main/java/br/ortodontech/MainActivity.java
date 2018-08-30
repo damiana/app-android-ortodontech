@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.i("mainDamiana:: ", "chamou metodo onClick Conteudo");
+                Intent intent = new Intent(MainActivity.this, WebViewConteudoActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -52,9 +54,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.i("mainDamiana:: ", "chamou metodo onClick Quiz");
-
-
-
+                Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+                startActivity(intent);
             }
         });
 

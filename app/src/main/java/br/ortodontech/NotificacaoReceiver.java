@@ -28,7 +28,7 @@ public class NotificacaoReceiver extends BroadcastReceiver {
 
     private void enviarNotificacao(String title, String message, Context contexto) {
 
-        Intent intent = new Intent(contexto, PerfilActivity.class);
+        Intent intent = new Intent(contexto, QuizActivity.class);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(contexto, 0 /* Request code */, intent,

@@ -21,6 +21,13 @@
         <activity
             android:name=".PerfilActivity"/>
 
+        <activity
+            android:name=".WebViewConteudoActivity"
+                android:theme="@android:style/Theme.NoTitleBar" />
+
+        <activity
+            android:name=".QuizActivity"/>
+
         <receiver android:name=".NotificacaoReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" >
