@@ -22,11 +22,11 @@
             android:name=".PerfilActivity"/>
 
         <activity
-            android:name=".WebViewConteudoActivity"
-                android:theme="@android:style/Theme.NoTitleBar" />
+            android:name=".QuizActivity"/>
 
         <activity
-            android:name=".QuizActivity"/>
+            android:name=".WebViewConteudoActivity"
+                android:theme="@android:style/Theme.NoTitleBar" />
 
         <receiver android:name=".NotificacaoReceiver" >
             <intent-filter>
