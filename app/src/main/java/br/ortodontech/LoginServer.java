@@ -31,7 +31,8 @@ public class LoginServer extends AsyncTask<String,Void,String> {
     protected String doInBackground(String... params) {
 
         String type = params[0];
-        String loginUrl = "http://denan.com.br/ortodontech/app/apis/loginPaciente.php";
+        //String loginUrl = "http://denan.com.br/ortodontech/app/apis/loginPaciente.php";
+        String loginUrl = "http://192.168.15.34/api-crud-rest-php/apis/loginPaciente.php";
 
         if(type.equals("login")) {
             Log.i("mainDamiana", "PerfilActovity:login");

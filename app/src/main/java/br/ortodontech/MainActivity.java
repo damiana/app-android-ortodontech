@@ -25,6 +25,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
 
+import br.ortodontech.notification.EnviarFirebaseTokenServer;
+
 public class MainActivity extends AppCompatActivity {
 
     Button btnConteudo, btnQuiz, btnPerfil;
@@ -38,8 +40,16 @@ public class MainActivity extends AppCompatActivity {
         btnQuiz = (Button) findViewById(R.id.btnQuiz);
         btnPerfil = (Button) findViewById(R.id.btnPerfil);
 
-        ConfiguracaoNotificacao configuracao = new ConfiguracaoNotificacao();
-        configuracao.setarContextoParaNotificacao(this);
+        FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener( MainActivity.this,
+                new OnSuccessListener<InstanceIdResult>() {
+            @Override
+            public void onSuccess(InstanceIdResult instanceIdResult) {
+                String newToken = instanceIdResult.getToken();
+                Log.e("newToken",newToken);
+                enviarTokenParaServidor(newToken);
+
+            }
+        });
 
         btnConteudo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,5 +82,11 @@ public class MainActivity extends AppCompatActivity {
     public void getPerfil(View view) {
         Intent intent = new Intent(MainActivity.this, PerfilActivity.class);
         startActivity(intent);
+    }
+
+    public void enviarTokenParaServidor(String token) {
+        // EnviarFirebaseTokenServer enviarToken = new EnviarFirebaseTokenServer(this);
+        // enviarToken.execute(token);
+
     }
 }

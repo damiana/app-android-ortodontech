@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1015594116224-or32n9k8lg56od1dhrvaveuav1kfkrso.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.ortodontech",
+            "certificate_hash": "c8d0932a5f7f6cda2e2f370c5631ae7651058155"
+          }
+        },
+        {
           "client_id": "1015594116224-5t39h1cbf2etsip85jneichaqorhq18a.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015594116224-5t39h1cbf2etsip85jneichaqorhq18a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
